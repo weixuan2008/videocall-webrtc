@@ -202,15 +202,15 @@ const VideoCall = () => {
 
   return (
     <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
-      <h1>Video Call</h1>
+      <h1>Meeting Room</h1>
       <div style={{ display: 'flex', gap: '20px' }}>
         <div>
           <h3>Local Video (You)</h3>
-          <video ref={localVideoRef} autoPlay muted style={{ width: '300px', border: '1px solid #ccc' }} />
+          <video ref={localVideoRef} autoPlay muted style={{ width: '200px', border: '1px solid #ccc' }} />
         </div>
         <div>
-          <h3>Remote Video (Friend)</h3>
-          <video ref={remoteVideoRef} autoPlay style={{ width: '300px', border: '1px solid #ccc' }} />
+          <h3>Remote Video (Tom)</h3>
+          <video ref={remoteVideoRef} autoPlay style={{ width: '600px', border: '1px solid #ccc' }} />
         </div>
       </div>
       <h2>Call Status: {callStatus}</h2>
